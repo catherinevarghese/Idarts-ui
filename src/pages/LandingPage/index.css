@@ -1,0 +1,113 @@
+.heading-card{
+background-color: #E5E4E2;
+margin-left: 10px;
+}
+.quantity-card{
+background-color: #E5E4E2;
+padding:10px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading-icon{
+    font-size: xx-large;
+    padding-left: 10px;;
+}
+.itot{
+    /* padding-right: 10px; */
+}
+.itot-heading{
+    font-size: x-large;
+    font-weight: 500;
+}
+.itot-count{
+    color:green;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.ishares{
+    float: left;
+    font-size: xx-large;
+    color: #8A9A5B;
+    font-weight: 700;
+}
+.ishares-by{
+    font-size: smaller;
+    font-weight: 800
+}
+.sp-index{
+    font-size:large;
+    font-weight:700
+}
+.equity{
+    float: left;
+    font-size: smaller;
+    font-weight: 500
+}
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.quantity-icon{
+    padding-left: 2px;
+}
+.cost{
+    font-weight: 500;
+}
+
+.market-value, .portfolio-percent{
+    font-weight: 800;
+}
+.portfolio-value, .market-value{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-bottom: 10px; 
+}
+.buy-card, .sell-card{
+    border: 2px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 700;
+    color: orange;
+}
+.buy-card{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.portfolio{
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-card{
+    background-color: #E5E4E2;
+    padding:10px;
+    margin-right: 10px;
+}
+.graph{
+    display: flex;
+    justify-content: space-around;
+}
+.square{
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+.mutual{
+    background: blue;
+}
+.etf{
+    background: orange;
+}
+.legends{
+    display: flex;
+    align-items: center;
+}
+.mt{
+    margin-top: 20%;
+}
