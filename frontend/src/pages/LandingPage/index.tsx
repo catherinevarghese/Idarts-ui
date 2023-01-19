@@ -30,7 +30,7 @@ export const LandingPage: React.FC = () => {
     <Row gutter={16}>
       <Col className="gutter-row" span={18}>
         {isProcessingRequest ? (
-          <Spin />
+          <Spin styel={{padingtop:'80px'}} />
         ) : (
           <>
             <LandingPageCards
