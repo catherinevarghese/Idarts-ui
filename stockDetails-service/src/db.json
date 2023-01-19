@@ -1,0 +1,71 @@
+
+{
+  "stockDetails": [
+    {
+      "id": 1,
+      "name": "AADR",
+      "quantity": "Doe",
+      "price": "johndoe@abc.com",
+      "avg-cost": "Male",
+      "invested-amount": "Terminated",
+      "portfolio-percent":"",
+      "unrealized-return":"",
+      "return":""
+    },
+    {
+        "id": 2,
+        "name": "AADR",
+        "quantity": "Doe",
+        "price": "johndoe@abc.com",
+        "avg-cost": "Male",
+        "invested-amount": "Terminated",
+        "portfolio-percent":"",
+        "unrealized-return":"",
+        "return":""
+      },
+      {
+        "id": 3,
+        "name": "AADR",
+        "quantity": "Doe",
+        "price": "johndoe@abc.com",
+        "avg-cost": "Male",
+        "invested-amount": "Terminated",
+        "portfolio-percent":"",
+        "unrealized-return":"",
+        "return":""
+      },
+      {
+        "id": 4,
+        "name": "AADR",
+        "quantity": "Doe",
+        "price": "johndoe@abc.com",
+        "avg-cost": "Male",
+        "invested-amount": "Terminated",
+        "portfolio-percent":"",
+        "unrealized-return":"",
+        "return":""
+      },
+      {
+        "id": 5,
+        "name": "AADR",
+        "quantity": "Doe",
+        "price": "johndoe@abc.com",
+        "avg-cost": "Male",
+        "invested-amount": "Terminated",
+        "portfolio-percent":"",
+        "unrealized-return":"",
+        "return":""
+      },
+      {
+        "id": 6,
+        "name": "AADR",
+        "quantity": "Doe",
+        "price": "johndoe@abc.com",
+        "avg-cost": "Male",
+        "invested-amount": "Terminated",
+        "portfolio-percent":"",
+        "unrealized-return":"",
+        "return":""
+      }
+  ]
+}
