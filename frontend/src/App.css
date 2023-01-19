@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.ant-card .ant-card-body{
+  padding: 0px !important;
+}
