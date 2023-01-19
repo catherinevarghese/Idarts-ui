@@ -1,4 +1,5 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { Card, Col, Row, Progress, Space, Spin } from "antd";
 import "./index.css";
@@ -8,6 +9,7 @@ import { getAllStockInfo } from "./slices/listingSlice";
 import { RootState } from "../../store";
 
 export const LandingPage: React.FC = () => {
+  const [t] = useTranslation("common");
   const dispatch = useDispatch<any>();
   useMemo(() => {
     dispatch(getAllStockInfo());
@@ -30,7 +32,7 @@ export const LandingPage: React.FC = () => {
     <Row gutter={16}>
       <Col className="gutter-row" span={18}>
         {isProcessingRequest ? (
-          <Spin/>
+          <Spin />
         ) : (
           <>
             <LandingPageCards
@@ -57,9 +59,12 @@ export const LandingPage: React.FC = () => {
           style={{ height: "100%" }}
         >
           <div className="portfolio">
-            <div className="heading-portfolio">Portfolio</div>
+            <div className="heading-portfolio">
+              {" "}
+              {t("LANDING_PAGE.PORTFOLIO")}
+            </div>
             <div>
-              Asset wise <CaretDownOutlined />
+              {t("LANDING_PAGE.ASSET_WISE")} <CaretDownOutlined />
             </div>
           </div>
           <div className="graph">
@@ -83,13 +88,13 @@ export const LandingPage: React.FC = () => {
                 <span>
                   <div className="square mutual"></div>
                 </span>
-                <span>Mutual funds</span>
+                <span> {t("LANDING_PAGE.MUTUAL_FUNDS")}</span>
               </div>
               <div className="legends">
                 <span>
                   <div className="square etf"></div>
                 </span>
-                <span>ETFS</span>
+                <span> {t("LANDING_PAGE.ETFS")}</span>
               </div>
             </div>
           </div>

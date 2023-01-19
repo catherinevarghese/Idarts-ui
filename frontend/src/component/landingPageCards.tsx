@@ -1,4 +1,4 @@
-import "../pages/LandingPage/index.css";
+import { useTranslation } from "react-i18next";
 import { Card, Col, Row } from "antd";
 import { Progress } from "antd";
 import {
@@ -9,6 +9,7 @@ import {
   MoneyCollectOutlined,
   DollarOutlined,
 } from "@ant-design/icons";
+import "../pages/LandingPage/index.css";
 import { IStockDetails } from "../interfaces/stockInterfaces";
 
 interface Props {
@@ -22,6 +23,7 @@ export const LandingPageCards: React.FC<Props> = ({
   equity,
   isMutualFund,
 }) => {
+  const [t] = useTranslation("common");
   const stockData = data.reduce(function (
     previousValue: IStockDetails,
     currentValue: IStockDetails
@@ -66,16 +68,16 @@ export const LandingPageCards: React.FC<Props> = ({
               <BarsOutlined />
             </div>
             <div className="itot">
-              <div className="itot-heading">ITOT</div>
-              <div className="itot-count">$283</div>
+              <div className="itot-heading"> {t("STOCK_CARDS.ITOT")}</div>
+              <div className="itot-count"> {t("STOCK_CARDS.MONEY")}</div>
             </div>
             <div className="ishares-body">
               <div>
-                <div className="ishares">iShares</div>
-                <div className="ishares-by">by fintech</div>
+                <div className="ishares">{t("STOCK_CARDS.ISHARES")}</div>
+                <div className="ishares-by">{t("STOCK_CARDS.BY_FINTECH")}</div>
               </div>
 
-              <div className="sp-index">S&P 500 Index</div>
+              <div className="sp-index">{t("STOCK_CARDS.SP_INDEX")}</div>
               <div className="equity">{equity}</div>
             </div>
           </div>
@@ -92,7 +94,7 @@ export const LandingPageCards: React.FC<Props> = ({
               <span className="quantity-icon">
                 <HddOutlined />
               </span>
-              <span>Quantity</span>
+              <span>{t("STOCK_CARDS.QUANTITY")}</span>
             </div>
             <div className="cost">{stockData.quantity}</div>
           </div>
@@ -101,7 +103,7 @@ export const LandingPageCards: React.FC<Props> = ({
               <span className="quantity-icon">
                 <MoneyCollectOutlined />
               </span>
-              <span>Avg.cost</span>
+              <span>{t("STOCK_CARDS.AVG_COST")}</span>
             </div>
             <div className="cost">${stockData.avg_cost}</div>
           </div>
@@ -110,7 +112,7 @@ export const LandingPageCards: React.FC<Props> = ({
               <span className="quantity-icon">
                 <DollarOutlined />
               </span>
-              <span>Invested Amt</span>
+              <span>{t("STOCK_CARDS.INVESTED_AMT")}</span>
             </div>
             <div className="cost">${stockData.invested_amount}</div>
           </div>
@@ -123,11 +125,11 @@ export const LandingPageCards: React.FC<Props> = ({
           style={{ height: "100%" }}
         >
           <div className="market-value">
-            <div>Market Value</div>
-            <div>$9542.234</div>
+            <div>{t("STOCK_CARDS.MARKET_VALUE_TEXT")}</div>
+            <div>{t("STOCK_CARDS.MARKET_VALUE")}</div>
           </div>
           <div className="portfolio-value">
-            <div>%portfolio Value</div>
+            <div>{t("STOCK_CARDS.PORTFOLIO_PERCENT")}</div>
             <div className="portfolio-percent">
               %{stockData.portfolio_percent}
             </div>
@@ -148,11 +150,11 @@ export const LandingPageCards: React.FC<Props> = ({
           style={{ height: "100%" }}
         >
           <div className="market-value">
-            <div>Unrealized P/L</div>
+            <div>{t("STOCK_CARDS.UNREALIZED")}</div>
             <div>${stockData.unrealized_return}</div>
           </div>
           <div className="portfolio-value">
-            <div>% return</div>
+            <div>{t("STOCK_CARDS.RETURN")}</div>
             <div className="portfolio-percent">
               {" "}
               <span>
@@ -176,10 +178,10 @@ export const LandingPageCards: React.FC<Props> = ({
       </Col>
       <Col span={2}>
         <Card className="buy-card " style={{ height: "45%" }}>
-          Buy
+          {t("STOCK_CARDS.BUY")}
         </Card>
         <Card className="sell-card" style={{ height: "45%" }}>
-          Sell
+          {t("STOCK_CARDS.SELL")}
         </Card>
       </Col>
     </Row>

@@ -1,0 +1,27 @@
+{
+ 
+    "LANDING_PAGE": {
+      "PORTFOLIO": "Portfolio",
+      "ASSET_WISE":"Asset wise",
+      "MUTUAL_FUNDS":"Mutual funds",
+      "ETFS":"ETFS"
+    },
+    "STOCK_CARDS":{
+        "ITOT":"ITOT",
+        "MONEY":"$282",
+        "ISHARES":"iShares",
+        "BY_FINTECH":"by fintech",
+        "SP_INDEX":"S&P 500 Index",
+        "QUANTITY":"Quantity",
+        "AVG_COST":"Avg.cost",
+        "INVESTED_AMT":"Invested Amt",
+        "MARKET_VALUE_TEXT":"Market Value",
+        "MARKET_VALUE":"$9542.234",
+        "PORTFOLIO_PERCENT":"%portfolio Value",
+        "UNREALIZED":"Unrealized P/L",
+        "RETURN":"% return",
+        "BUY":"BUY",
+        "SELL":"SELL"
+    }
+  }
+  

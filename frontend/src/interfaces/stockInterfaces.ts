@@ -10,6 +10,6 @@ export interface IStockDetails{
         return:number
 }
 export interface IAllStock{
-    isProcessingRequest: boolean
+    isProcessingRequest: boolean,
     data: IStockDetails[]
 }

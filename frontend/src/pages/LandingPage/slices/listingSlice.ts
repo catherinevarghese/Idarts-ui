@@ -3,6 +3,7 @@ import { RootState } from "../../../store";
 import { getStockDetails } from "../../../service/getStockDetailsService";
 import { message } from "antd";
 import { IAllStock } from "../../../interfaces/stockInterfaces";
+import {ERROR_MESSAGE} from "../../../constants/index";
 
 const initialState: IAllStock = {
   isProcessingRequest: false,
@@ -39,7 +40,7 @@ export const getAllStockInfo = createAsyncThunk(
         const response = await getStockDetails();
         return response.data;
       } catch (err: any) {
-        message.error("Something went wrong, check again");
+        message.error(ERROR_MESSAGE);
       }
     }
   );
